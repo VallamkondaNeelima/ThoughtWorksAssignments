@@ -19,7 +19,8 @@ public class TrainingHours {
         obj.weeklySalary();
     }
 
-    public void weeklySalary() {
+    public void weeklySalary() 
+    {
         int weeklySalary = 0, weeklyHours = 0;
         for (int i = 1; i < 6; i++) {
             weeklyHours += dailyHours[i];
