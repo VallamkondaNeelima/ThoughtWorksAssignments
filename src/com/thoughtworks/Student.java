@@ -9,20 +9,22 @@ is a probable topper number or not. */
 import java.util.*;
 
 public class Student {
-    static int registrationNumber;
-    public Student()
-    {
-        Scanner sc = new Scanner(System.in);
-        registrationNumber = sc.nextInt();
+    int registrationNumber;
+
+    public Student(int registrationNumber) {
+        this.registrationNumber = registrationNumber;
 
     }
+
     public static void main(String[] args) {
-        Student obj = new Student();
+        Scanner sc = new Scanner(System.in);
+        int registrationNumber = sc.nextInt();
+        Student obj = new Student(registrationNumber);
         obj.isTopperNumber();
 
     }
-    public void isTopperNumber()
-    {
+
+    public void isTopperNumber() {
         int evenDigitSum = 0, oddDigitSum = 0, digit;
         int dummy = registrationNumber;
         while (dummy != 0) {

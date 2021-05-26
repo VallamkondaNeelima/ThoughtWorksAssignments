@@ -3,7 +3,7 @@ package com.thoughtworks;
 import java.util.*;
 
 public class TrainingHours {
-    private static int dailyHours[] = new int[7];
+    private int dailyHours[];
 
     public TrainingHours(int dailyHours[]) {
         this.dailyHours = dailyHours;
