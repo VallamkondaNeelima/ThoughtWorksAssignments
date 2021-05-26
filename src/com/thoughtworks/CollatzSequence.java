@@ -16,7 +16,7 @@ public class CollatzSequence {
                 number = 3 * number + 1;
             else
                 number /= 2;
-        }
+       }
         System.out.println(1);
     }
 }
